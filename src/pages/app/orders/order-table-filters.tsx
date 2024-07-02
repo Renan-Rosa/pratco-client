@@ -1,5 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod'
-import { PlusCircle, Search, X } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { Controller, useForm } from 'react-hook-form'
 import { useSearchParams } from 'react-router-dom'
 import { z } from 'zod'
@@ -137,10 +137,6 @@ export function OrderTableFilters() {
       >
         <X className="mr-2 h-4 w-4" />
         Remover filtros
-      </Button>
-      <Button className="ml-auto text-white" size="lg" type="button">
-        <PlusCircle className="mr-2 h-4 w-4" />
-        Adicionar pedido
       </Button>
     </form>
   )
