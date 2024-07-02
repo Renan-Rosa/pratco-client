@@ -9,6 +9,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { Dialog, DialogTrigger } from '@/components/ui/dialog'
+import { ProductCreation } from './product-creation'
 
 export function ProductTableFilters() {
   return (
@@ -37,10 +39,16 @@ export function ProductTableFilters() {
         <X className="mr-2 h-4 w-4" />
         Remover filtros
       </Button>
-      <Button className="ml-auto text-white" size="xs" type="button">
-        <PlusCircle className="mr-2 h-4 w-4" />
-        Adicionar produto
-      </Button>
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button className="ml-auto text-white" size="xs" type="button">
+            <PlusCircle className="mr-2 h-4 w-4" />
+            Adicionar produto
+          </Button>
+        </DialogTrigger>
+
+        <ProductCreation />
+      </Dialog>
     </form>
   )
 }
