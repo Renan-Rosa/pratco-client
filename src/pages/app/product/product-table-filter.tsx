@@ -15,7 +15,7 @@ export function ProductTableFilters() {
     <form className="flex items-center gap-2">
       <span className="text-sm font-semibold">Filtros:</span>
       <Input placeholder="ID do produto" className="h-8 w-auto" />
-      <Input placeholder="Nome do fornecedor" className="h-8 w-[320px]" />
+      <Input placeholder="Nome do produto" className="h-8 w-[320px]" />
       <Select defaultValue="all">
         <SelectTrigger className="h-8 w-[180px]">
           <SelectValue />
