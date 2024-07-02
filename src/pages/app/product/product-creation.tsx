@@ -6,7 +6,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
-import { MessageSquarePlus, Plus, Square, X } from 'lucide-react'
+import { Plus, X } from 'lucide-react'
 
 export function ProductCreation() {
   return (

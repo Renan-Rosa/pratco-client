@@ -1,4 +1,4 @@
-import { LogoSvg } from '@/components/logo'
+// import { LogoSvg } from '@/components/logo'
 import { Outlet } from 'react-router-dom'
 
 export function AuthLayout() {
@@ -6,7 +6,7 @@ export function AuthLayout() {
     <div className="grid min-h-screen grid-cols-2 antialiased">
       <div className="flex h-full flex-col justify-between border-r border-foreground/5 bg-muted p-10 text-muted-foreground">
         <div className="flex items-center gap-3 text-lg text-foreground">
-          <LogoSvg />
+          <img src="/logo.png" height={100} width={400} alt="logo" />
         </div>
 
         <footer className="text-sm">

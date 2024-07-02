@@ -4,13 +4,12 @@ import { AccountMenu } from './account-menu'
 import { NavLink } from './nav-link'
 import { ThemeToggle } from './theme/theme-toggle'
 import { Separator } from './ui/separator'
-import { LogoSvg } from './logo'
 
 export function Header() {
   return (
     <div className="border-b">
       <div className="flex h-16 items-center gap-6 px-6">
-        <LogoSvg />
+        <img src="/logo.png" height={80} width={200} alt="logo" />
 
         <Separator orientation="vertical" className="h-6" />
 
